@@ -20,4 +20,4 @@ cth : data semua character pada 1 film,
 alasan tidak bisa :
 
 - Respon API terlalu lama
-- Belum menemukan solusi
+- Belum menemukan solusi untuk mengakalinya
