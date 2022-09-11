@@ -2,6 +2,10 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
+    container: {
+      center: true,
+      padding: "16px",
+    },
     extend: {
       colors: {
         primary: "#F7F7F7",

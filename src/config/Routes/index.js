@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { BrowserRouter, Routes as Router, Route } from "react-router-dom";
-import { FilmDetail } from "../../pages";
+import { CharacterDetail, FilmDetail, PlanetDetail } from "../../pages";
 import MainApp from "../../pages/MainApp";
 
 const Routes = () => {
@@ -18,6 +18,21 @@ const Routes = () => {
           path="/film/:id"
           element={
             <FilmDetail nightMode={nightMode} setNightMode={setNightMode} />
+          }
+        />
+        <Route
+          path="/character/:id"
+          element={
+            <CharacterDetail
+              nightMode={nightMode}
+              setNightMode={setNightMode}
+            />
+          }
+        />
+        <Route
+          path="/planet/:id"
+          element={
+            <PlanetDetail nightMode={nightMode} setNightMode={setNightMode} />
           }
         />
       </Router>

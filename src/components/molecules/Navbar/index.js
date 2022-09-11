@@ -4,18 +4,18 @@ import { Link } from "react-router-dom";
 const Navbar = (props) => {
   const { nightMode } = props;
   return (
-    <div className=" flex justify-center w-full ">
+    <div className="flex justify-center w-full ">
       <div
-        className={`fixed bottom-[60px] z-50 ${
+        className={` bottom-[20px] z-40 ${
           nightMode ? `text-primaryDark` : `text-primary`
-        } md:hidden`}
+        } md:top-0 fixed h-20`}
       >
         {/* character */}
         <Link to="/character">
           <div
             className={`${
               nightMode ? `bg-secondaryNight` : `bg-secondary`
-            } inline py-4 px-3 rounded-l-full hover:opacity-90 hover:py-5 transition-all duration-300 ease-in`}
+            } inline py-4 px-3 rounded-l-full hover:opacity-90 hover:py-5 transition-all duration-300 ease-in `}
           >
             <svg
               className="fill-current inline w-[40px] h-[40px] hover:w-[50px] hover:h-[50px] transition-all duration-200 ease-in"
@@ -28,6 +28,9 @@ const Navbar = (props) => {
                 <path d="M10.4511719,4l-0.4022827,3.8875122C10.6292725,7.9528809,11.2683716,8,12,8   s1.3707275-0.0471191,1.9511108-0.1124878L13.5488281,4H10.4511719z M12,7c-0.5512695,0-1-0.4487305-1-1s0.4487305-1,1-1   s1,0.4487305,1,1S12.5512695,7,12,7z" />
               </g>
             </svg>
+            <span className="hidden md:inline-block mx-5 w-[140px] text-right">
+              CHARACTER
+            </span>
           </div>
         </Link>
         {/* character end */}
@@ -36,11 +39,11 @@ const Navbar = (props) => {
           <div
             className={`${
               nightMode ? `bg-secondaryNight` : `bg-secondary`
-            } inline py-6 px-3 rounded-md over:opacity-90 hover:py-6.5 hover:px-3 transition-all duration-300 ease-in`}
+            } inline py-6 px-3  rounded-md over:opacity-90 hover:py-6.5 hover:px-3 transition-all duration-300 ease-in md:px-14 md:hover:px-20`}
           >
             <svg
               baseProfile="tiny"
-              className="fill-current inline w-[50px] h-[50px] hover:w-[53px] hover:h-[53px] transition-all duration-200 ease-in"
+              className="fill-current inline w-[50px] h-[50px] hover:w-[53px] hover:h-[53px] transition-all duration-200 ease-in "
               id="Layer_2"
               version="1.2"
               viewBox="0 0 512 512"
@@ -61,6 +64,9 @@ const Navbar = (props) => {
               nightMode ? `bg-secondaryNight` : `bg-secondary`
             } inline py-4 px-3 rounded-r-full hover:opacity-90 hover:py-5 transition-all duration-300 ease-in`}
           >
+            <span className="hidden md:inline-block mx-5 w-[140px] text-left">
+              PLANETS
+            </span>
             <svg
               baseProfile="tiny"
               className="fill-current inline w-[40px] h-[40px] hover:w-[50px] hover:h-[50px] transition-all duration-200 ease-in"

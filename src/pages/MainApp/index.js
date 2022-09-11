@@ -21,12 +21,12 @@ const MainApp = (props) => {
             : `bg-primary text-primaryDark`
         } min-h-screen transition ease-in duration-300 pb-40`}
       >
-        <div className="container mx-auto">
-          <div className="flex justify-center pt-20 pb-5">
+        <div className="container mx-auto md:px-20 lg:px-52">
+          <div className="flex justify-center pt-20 pb-5 md:pt-36">
             <img
               src={nightMode ? nightCover : lightCover}
               alt="gambar"
-              className="w-[300px]"
+              className="w-[300px] md:w-[400px] md:mb-20"
             />
           </div>
           <Router>
