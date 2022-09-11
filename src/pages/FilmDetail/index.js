@@ -89,16 +89,12 @@ const FilmDetail = (props) => {
                   <td>Release Date</td>
                   <td>{dataFilmDetail.release_date}</td>
                 </tr>
-                <tr>
-                  <td>Character</td>
-                  <td>sss</td>
-                </tr>
               </tbody>
             </table>
           </div>
           <div className="w-full grid">
             <Link
-              to="/character"
+              to="/"
               className="text-center hover:underline hover:opacity-60 hidden md:inline-block"
             >
               Back
