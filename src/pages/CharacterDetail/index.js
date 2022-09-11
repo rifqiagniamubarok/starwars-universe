@@ -33,7 +33,7 @@ const CharacterDetail = (props) => {
       } h-[1000px] transition-color duration-300 ease-in `}
     >
       <div className="container px-auto">
-        <div className="">
+        <div>
           <div>
             <BackButton linkto="/character" />
           </div>

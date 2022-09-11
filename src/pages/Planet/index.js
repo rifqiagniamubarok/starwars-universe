@@ -15,7 +15,6 @@ const Planet = (props) => {
   );
   const dispatch = useDispatch();
 
-  console.log(totalPagePlanet);
   useEffect(() => {
     dispatch(setDataPlanet(page));
     dispatch(getJumlahPlanet(page));
@@ -28,6 +27,14 @@ const Planet = (props) => {
   const next = () => {
     setPage(page === totalPagePlanet ? totalPagePlanet : page + 1);
   };
+
+  const toDetail = (url) => {
+    const net1 = url.split("https://swapi.dev/api/planets/");
+    const net2 = net1[1].split("/");
+    const id = net2[0];
+    navigate(`/planet/${id}`);
+  };
+
   return (
     <div>
       <div className="w-full p-2">
@@ -57,9 +64,7 @@ const Planet = (props) => {
                 <tr
                   key={i.toString()}
                   className="hover:opacity-60 cursor-pointer"
-                  onClick={() => {
-                    navigate(`/planet/2`);
-                  }}
+                  onClick={() => toDetail(j.url)}
                 >
                   <td className="text-left">{j.name}</td>
                   <td className="text-left">{j.population}</td>

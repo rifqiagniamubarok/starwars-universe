@@ -10,7 +10,6 @@ const FilmDetail = (props) => {
   const { nightMode, setNightMode } = props;
   const { dataFilmDetail } = useSelector((state) => state.filmReducer);
 
-  console.log(params.id);
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(setDataFilmDetail(params.id));

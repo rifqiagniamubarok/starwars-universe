@@ -13,6 +13,7 @@ const PlanetDetail = (props) => {
   useEffect(() => {
     dispatch(setDataPlanetDetail(params.id));
   }, [params.id, dispatch]);
+
   return (
     <div
       className={`${
