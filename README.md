@@ -15,7 +15,7 @@ STAR WARS UNIVERSE is a website for looking for any information in STAR WARS UNI
 
 # LINK
 
-- website : https://starwars-universe-portal.vercel.app/
+- website : https://starwars-universe-sooty.vercel.app/
 - github : https://github.com/rifqiagniamubarok/starwars-universe/
 
 ### Hambatan Tidak Bisanya Data One To Many
