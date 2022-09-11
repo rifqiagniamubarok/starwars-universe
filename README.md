@@ -13,6 +13,11 @@ STAR WARS UNIVERSE is a website for looking for any information in STAR WARS UNI
 - Ionicons
 - Starwars Api
 
+# LINK
+
+- website : https://starwars-universe-portal.vercel.app/
+- github : https://github.com/rifqiagniamubarok/starwars-universe/
+
 ### Hambatan Tidak Bisanya Data One To Many
 
 cth : data semua character pada 1 film,
