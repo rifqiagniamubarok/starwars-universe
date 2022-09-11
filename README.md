@@ -13,7 +13,7 @@ STAR WARS UNIVERSE is a website for looking for any information in STAR WARS UNI
 - Ionicons
 - Starwars Api
 
-### Hambatan Tidak Bisanya Data One To Manay
+### Hambatan Tidak Bisanya Data One To Many
 
 cth : data semua character pada 1 film
 alasan tidak bisa :
