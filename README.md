@@ -15,7 +15,8 @@ STAR WARS UNIVERSE is a website for looking for any information in STAR WARS UNI
 
 ### Hambatan Tidak Bisanya Data One To Many
 
-cth : data semua character pada 1 film
+cth : data semua character pada 1 film,
+
 alasan tidak bisa :
 
 - Respon API terlalu lama
